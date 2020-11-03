@@ -1,0 +1,36 @@
+/* CSS Document */
+
+.cont{
+	margin-left: 50px;
+}
+#counter{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-0%,-50%);
+	z-index:9;
+}
+#circle1{
+	height: 100px;
+	width: 100px;
+	background-color:#f5f5f8;
+	border-radius:50%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 1;
+	margin-left: 50px;
+}
+
+#cirle2{
+	height: 160px;
+	width: 160px;
+	border-radius:50%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index:-1;
+	margin-left: 50px;
+}

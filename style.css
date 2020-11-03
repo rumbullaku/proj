@@ -1,0 +1,348 @@
+/* second page */
+@import "main.css";
+.container{
+  height:100vh;
+  width:100%;
+  background:#add8e6;
+  padding:0;
+}
+.home img{
+  height:25%;
+  width:25%;
+  position:relative;
+  margin:auto;
+  display:block;
+
+
+}
+.home p{
+  text-align:center;
+  margin:auto;
+  font-size:40px;
+  color:#f4f4f8;
+padding:50px 0px;
+}
+/* second page ends */
+
+
+/*  global */
+body{
+  font-family: Gill Sans Extrabold, sans-serif;
+  margin:0;
+  padding:0;
+  font-size:12px;
+}
+
+/*  markup for vertical menu begins */
+.verticalDiv{
+  width:180px;
+  height:100vh;
+  background-color:#f4f4f8;
+  float:left;
+}
+
+.cont{
+  margin-left:20px;
+  padding-top:20px;
+}
+.logo img{
+  width:25px;
+  height:25px;
+  padding-bottom:30px;
+}
+.logo img:hover{
+  width:30px;
+  height:30px;
+}
+.exp{
+  padding-top: 20PX;
+}
+.expr a{
+  text-decoration: none;
+  display: block;
+  color: #818181;
+}
+/* dropdown when hover the arrow */
+.dropbtn {
+  color: #B0B0B0;
+  font-size: 14px;
+  border: none;
+  margin:0;
+  padding: 0;
+  float: right;
+  padding-right: 15px;
+  background: none;
+}
+
+.dropdown {
+  position: relative;
+  top:-5px;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;
+  font-size: 14px;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+/* dropdown when hover the arrow ends */
+
+.expr .smL{
+  font-size: 11px;
+
+}
+.expr .norml{
+  color:#000;
+  font-weight: bold;
+}
+.expr  a:hover{
+  color:#000;
+  font-size: 14px;
+}
+.dash a{
+  text-decoration: none;
+  display: block;
+  padding-top:40px;
+  color: #818181;
+}
+.dash a:hover{
+  color:#000;
+  font-size: 14px;
+}
+.dash .norml{
+    color:#000;
+    font-weight: 500;
+}
+.menuFooter{
+  position: absolute;
+  bottom: 10px;
+  height: 20px;
+}
+.menuFooter a{
+  display: absolute;
+  text-decoration: none;
+  margin-right: 30px;
+  color: #818181;
+}
+.menuFooter img{
+  margin-bottom: -4px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.menuFooter a :hover{
+color: #000;
+}
+
+/*  markup for vertical menu ends */
+
+/*Grid display*/
+
+.item1{ grid-area: left;}
+.item2 { grid-area: right;}
+.content2{
+  display: grid;
+  grid-template-areas:
+  'left left right right';
+}
+
+
+/*  markup for vertical persons profile */
+.content2{
+  margin-left: 20px;
+}
+.horizDiv{
+    margin-left: 20px;
+}
+
+  .portrait{
+    position:relative;
+    display:block;
+    padding-top:40px;
+    width: 300px;
+
+
+  }
+  .portrait img{
+    width:100px;
+    height:100px;
+     border-radius: 50%;
+     margin-left: 20px;
+
+  }
+  .fname span{
+    font-weight:300;
+    color:#03dffc;
+    padding-right:20px;
+    padding-left:20px;
+  }
+  .fname span a:hover{
+    color: #add8e6;
+  }
+  .fname{
+    font-size:20px;
+  }
+
+  .enrolment{
+    margin-left: 20px;
+
+  }
+
+
+  .enrolment p{
+    padding-top: 15px;
+    color: #818181;
+    line-height: 2;
+  }
+  .enrolment span{
+    color:#000;
+   font-size: 14px;
+  }
+
+/*  markup for vertical person's profile ends */
+
+
+/* progress bar css */
+.
+/* Progress bar filling the whole right half for values above 50% */
+
+/*  Timeline markup begins */
+
+.timeline{
+  margin:20px 20px;
+}
+.item2{
+  margin-left: 40px;
+  margin-top: 90px;
+  font-size: 12px;
+}
+
+  .timeline ul{
+    list-style: none;
+    display: relative;
+    margin-left:0;
+    padding: 0;
+    position:relative;
+  }
+  .timeline li ::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left:-10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin-left: -50px;
+  }
+
+.timeline li span::after{
+  content: "";
+  position: absolute;
+  top:25px;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  border: 1px solid #aaa;
+  margin-left: -50px;
+  z-index: -1;
+}
+  .timeline li.act ::before{
+    content: "";
+    border-color: #03fcec;
+    background-color: #03fcec;
+  }
+
+  .timeline ul li{
+    margin: 30px 50px;
+    position: relative;
+
+  }
+  .mile{
+    border: 1px;
+    height: 100px;
+    width: 270px;
+    padding:0px 10px 40px;
+    color: #818181;
+  }
+  .mile .bigsize{
+    font-size: 16px;
+  }
+  .mile .lineH{
+    line-height: 1.5;
+  }
+   .toRight{
+    float: right;
+    padding-top: -10px;
+  }
+  .activity1{
+    border: 1px;
+    height: 70px;
+    width: 270px;
+   box-shadow: 0px 10px 15px #dadedf;
+   padding: 10px 10px 40px;
+   border-radius: 15px;
+
+  }
+  .activity2{
+    border: 1px;
+    height: 70px;
+    width: 270px;
+   box-shadow: 0px 10px 15px #dadedf;
+   padding: 10px 10px 40px;
+   border-radius: 15px;
+
+  }
+  .activity3{
+    border: 1px;
+    height: 70px;
+    width: 270px;
+   box-shadow: 0px 10px 15px #dadedf;
+   padding: 10px 10px 40px;
+   border-radius: 15px;
+
+  }
+  .timeline .light{
+    color: #818181;
+    font-size: 12px;
+    font-weight: normal;
+  }
+
+  strong{
+    font-size: 16px;
+  }
+
+  /* hovering on activity boxs */
+  .timeline .activity1:hover{
+   background-color: #f5f5f8;
+  }
+  .timeline .activity2:hover{
+   background-color: #f5f5f8;
+  }
+  .timeline .activity3:hover{
+   background-color: #f5f5f8;
+  }
+
+
+
+
+  /*  Timeline markup ends */
