@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <script src="https://kit.fontawesome.com/32b71cfe53.js" crossorigin="anonymous"></script>
+  <link  rel="stylesheet" href="stylesheet/style.css">
+
+  <title>Student profile</title>
+</head>
+<body>
+  <div class="verticalDiv"> <!--veritical div begins-->
+      <div class="cont">
+        <div class="logo">
+          <a href="practera.html"><img src="images/practeraB" alt="Practera logo"></a>
+        </div>
+        <div class="expr">
+          <a href="#" class="smL">Current experience</a>
+          <!-- dropdown arrow -->
+          <div class="dropdown">
+  <button class="dropbtn"><i class="fas fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a href="index.html">Virtual Internship</a>
+
+  </div>
+</div>
+  <!-- dropdown arrow ends -->
+          <a href="index.html" class="norml">Virtual Internship</a>
+
+        </div>
+        <div class="dash">
+         <a href="#" class="norml">Dashboard</a>
+         <a href="#">Enrolments</a>
+         <a href="#">Teams</a>
+        </div>
+<!-- side menu footer begins -->
+        <div class="menuFooter">
+          <a href="index.html"><img src="images/manFace.PNG" alt="avatar picture"></a>
+          <a href="#"><i class="fas fa-comment-alt fa-lg"></i></a>
+          <a href="#"><i class="fas fa-mobile-alt fa-lg"></i></a>
+        </div>
+        <!-- side menu footer ends -->
+
+
+      </div>
+    </div> <!--veritical div ends   -->
+
+<div class="content2"><!--horizontal div begins   -->
+    <div class="horizDiv item1">
+
+    <div class="name">
+    <p  class="fname"><a href="practera.html"><span><i class="fas fa-arrow-left"></i></span></a><strong>Monday Blighton</strong></p>
+    <div class="portrait">
+      <img src="images/manFace.PNG" alt="avatar picture">
+      <!--progress bar begin-->
+      <div class="cont">
+      <div id="circle1"></div>
+	<div id="circle2"></div>
+	<canvas height="100" width="100" id="counter"/>
+  </div>
+	<script type="application/javascript">
+		var counter = document.getElementById('counter').getContext('2d');
+		var no=0; //Starting Point
+		var pointToFill = 1.85; //Point from where you want to fill the circle
+		var cw = counter.canvas.width; //Return canvas width
+		var ch = counter.canvas.height; //Return canvas height
+		var diff; //find the different between current value (no) and targeted value (100)
+
+		function fillCounter(){
+			diff = ((no/100)*Math.PI*2*10);
+
+			counter.clearRect(0,0,cw,ch); //Clear canvas everytime when function is call
+
+			counter.lineWidth = 12;  //size of stroke
+
+			counter.fillStyle = '#050505'; //color that you want to fill in counter/circle
+
+			counter.strokeStyle = '#FFA500';  //Stroke Color
+
+			counter.texAlign ='center';
+
+			counter.font = "18px monospace"; //Set font size and face
+
+			counter.fillText(no+"%",30,50); //fillText (text,x,y);
+      counter.fillText("Done",25,65,);
+			counter.beginPath();
+			counter.arc(50,50,43,pointToFill,diff/10+pointToFill);  //arc(x,y,radius,start,stop)
+
+			counter.stroke(); //to fill stroke
+			//now add condition
+
+			if(no >=75)
+				{
+					clearTimeout(fill); //fill is a variable that call the function fillcounter()
+				}
+			no++;
+		}
+
+	//now call the function
+		var fill = setInterval(fillCounter,20); //call the fillCounter function after every 50MS
+
+	</script>
+      <!--progress bar end-->
+
+    </div>
+
+
+
+    <div class="enrolment">
+      <p>Enrolled <br class="space"><span>Dec 2, 2019</span></p>
+      <p>Team <br class="space"><span> Cosmos</span></p>
+      <p>Key three <br class="space"><span> Value three</span></p>
+
+
+    </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="timeline item2">
+    <ul>
+      <li>
+          <span></span>
+        <div class="mile">
+          <p class="title">MILESTONE</p>
+          <p class="bigsize">Fruits That Are Red</p>
+          <p class="lineH">I thought what I'd do was, i'd pretend I <br> was one of those deaf-mutes.</p>
+          <p class="toRight">000</p>
+        </div>
+      </li>
+      <li>
+          <span></span>
+        <div class="activity1">
+        <p class="light">ACTIVITY</p>
+        <P> <strong>Prunes Avium</strong></P>
+        <p class="toRight">000</p>
+        </div>
+      </li>
+      <li class="act">
+        <span></span>
+        <div class="activity2">
+        <p class="light">ACTIVITY</p>
+        <P><strong>Fragaria Vesca</strong></P>
+        <p class="toRight">000</p>
+        </div>
+      </li>
+      <li class="act">
+        <div class="activity3">
+        <p class="light">ACTIVITY</p>
+        <P><strong>Malus Domestica</strong></P>
+        <p class="toRight">000</p>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</div>  <!--horizontal div ends   -->
+
+
+
+
+</body>
+</html>
